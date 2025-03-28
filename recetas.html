@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario con Miel | Mieles El Chañar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/fav.png">
+
+    <style>
+:root {
+    --primary: #f9f5e1; /* Tono miel suave (crema claro) */
+    --background: #f0f0f0; /* Fondo gris claro */
+    --accent: #d4b400; /* Amarillo dorado suave */
+    --text: #4a3d29; /* Marrón suave oscuro */
+}
+
+
+    </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--text)]">
+    
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/index.html">
+                <img src="logo.png" alt="Mieles El Chañar" class="h-12">
+            </a>
+            <button id="menu-toggle" class="md:hidden text-[var(--text)] text-2xl">
+                ☰
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6 text-[var(--text)]">
+                <li><a href="/#inicio" class="hover:text-[var(--accent)] text-lg">Inicio</a></li>
+                <li><a href="/#nosotros" class="hover:text-[var(--accent)] text-lg">Nosotros</a></li>
+                <li><a href="/#productos" class="hover:text-[var(--accent)] text-lg">Productos</a></li>
+                <li><a href="/#beneficios" class="hover:text-[var(--accent)] text-lg">Beneficios</a></li>
+                <li><a href="/recetas.html" class="hover:text-[var(--accent)] text-lg">Recetas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <!-- MENÚ MÓVIL -->
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-75 flex flex-col items-center justify-center space-y-6 text-white text-2xl">
+            <a href="/#inicio" class="hover:text-[var(--accent)]">Inicio</a>
+            <a href="/#nosotros" class="hover:text-[var(--accent)]">Nosotros</a>
+            <a href="/#productos" class="hover:text-[var(--accent)]">Productos</a>
+            <a href="/#beneficios" class="hover:text-[var(--accent)]">Beneficios</a>
+            <a href="/recetas.html" class="hover:text-[var(--accent)]">Recetas</a>
+            <button id="close-menu" class="text-3xl">✖</button>
+        </div>
+    
+<br>
+<br><br>
+    <section id="recetas-dulces" class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-[var(--text)] mb-8">Recetas Dulces</h2>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Tarta de Manzana y Miel -->
+        <div class="p-6 bg-gray-100 rounded-lg text-left">
+            <h3 class="text-xl font-semibold">Tarta de Manzana y Miel</h3>
+            <p class="text-gray-600">Una tarta dulce y suave con el toque especial de la miel.</p>
+            <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+            <ul class="list-disc ml-6 text-gray-600">
+                <li>2 manzanas</li>
+                <li>2 huevos</li>
+                <li>100g de harina</li>
+                <li>50g de manteca</li>
+                <li>100ml de miel</li>
+                <li>Canela al gusto</li>
+            </ul>
+            <h4 class="mt-4 font-semibold">Preparación:</h4>
+            <p class="text-gray-600">1. Mezclar los ingredientes hasta formar una masa homogénea. 2. Verter en un molde y hornear a 180°C por 30 minutos.</p>
+        </div>
+        
+        <!-- Galletas de Avena y Miel -->
+        <div class="p-6 bg-gray-100 rounded-lg text-left">
+            <h3 class="text-xl font-semibold">Galletas de Avena y Miel</h3>
+            <p class="text-gray-600">Una opción saludable para el desayuno o la merienda.</p>
+            <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+            <ul class="list-disc ml-6 text-gray-600">
+                <li>200g de avena</li>
+                <li>100g de harina</li>
+                <li>100ml de miel</li>
+                <li>50ml de aceite</li>
+                <li>1 huevo</li>
+                <li>1 cucharadita de canela</li>
+            </ul>
+            <h4 class="mt-4 font-semibold">Preparación:</h4>
+            <p class="text-gray-600">1. Mezclar los ingredientes hasta obtener una masa. 2. Formar galletas y hornear a 180°C por 15 minutos.</p>
+        </div>
+
+                <!-- PANQUEQUES CON MIEL -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Panqueques con Miel</h3>
+                    <p class="text-gray-600 mt-2">Una receta clásica y deliciosa.</p>
+                    <h4 class="font-semibold mt-4">Ingredientes:</h4>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>1 taza de harina</li>
+                        <li>1 taza de leche</li>
+                        <li>1 huevo</li>
+                        <li>1 cucharadita de esencia de vainilla</li>
+                        <li>1 cucharada de manteca derretida</li>
+                        <li>Miel al gusto</li>
+                    </ul>
+                    <h4 class="font-semibold mt-4">Preparación:</h4>
+                    <p class="text-gray-700">Mezclar todos los ingredientes hasta obtener una masa homogénea. Cocinar en una sartén caliente y servir con abundante miel.</p>
+                </div>
+    
+                <!-- BIZCOCHUELO DE MIEL -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Bizcochuelo de Miel</h3>
+                    <p class="text-gray-600 mt-2">Esponjoso y con un toque dulce natural.</p>
+                    <h4 class="font-semibold mt-4">Ingredientes:</h4>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>3 huevos</li>
+                        <li>1 taza de miel</li>
+                        <li>1/2 taza de aceite</li>
+                        <li>2 tazas de harina leudante</li>
+                        <li>1 taza de leche</li>
+                    </ul>
+                    <h4 class="font-semibold mt-4">Preparación:</h4>
+                    <p class="text-gray-700">Batir los huevos con la miel. Agregar el aceite y la leche. Incorporar la harina y mezclar. Hornear a 180°C por 35 minutos.</p>
+                </div>
+    
+                <!-- GALLETAS DE MIEL -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Galletas de Miel</h3>
+                    <p class="text-gray-600 mt-2">Crujientes y perfectas para acompañar el té.</p>
+                    <h4 class="font-semibold mt-4">Ingredientes:</h4>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>2 tazas de harina</li>
+                        <li>1/2 taza de miel</li>
+                        <li>1/2 taza de manteca</li>
+                        <li>1 huevo</li>
+                        <li>1 cucharadita de polvo de hornear</li>
+                    </ul>
+                    <h4 class="font-semibold mt-4">Preparación:</h4>
+                    <p class="text-gray-700">Mezclar todos los ingredientes hasta formar una masa. Estirar y cortar en formas. Hornear a 180°C por 12 minutos.</p>
+                </div>
+    
+                <!-- HELADO DE MIEL Y NUECES -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Helado de Miel y Nueces</h3>
+                    <p class="text-gray-600 mt-2">Refrescante y sin necesidad de máquina.</p>
+                    <h4 class="font-semibold mt-4">Ingredientes:</h4>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>2 tazas de crema de leche</li>
+                        <li>1 taza de miel</li>
+                        <li>1/2 taza de nueces picadas</li>
+                        <li>1 cucharadita de esencia de vainilla</li>
+                    </ul>
+                    <h4 class="font-semibold mt-4">Preparación:</h4>
+                    <p class="text-gray-700">Batir la crema hasta que espese. Agregar la miel y la vainilla. Mezclar con las nueces y congelar por 4 horas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="recetas-saladas" class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-[var(--text)] mb-8">Recetas Saladas con Miel</h2>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pollo a la Miel y Mostaza -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Pollo a la Miel y Mostaza</h3>
+                    <p class="text-gray-600">Un plato con un sabor dulce y ácido, perfecto para cualquier ocasión.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>4 pechugas de pollo</li>
+                        <li>3 cucharadas de miel</li>
+                        <li>2 cucharadas de mostaza</li>
+                        <li>1 cucharada de aceite de oliva</li>
+                        <li>Sal y pimienta al gusto</li>
+                        <li>1 cucharadita de ajo en polvo</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">1. Mezclar la miel, mostaza, aceite, ajo en polvo, sal y pimienta. 2. Marinar el pollo durante 30 minutos. 3. Cocinar el pollo en una sartén caliente hasta dorarse y servir.</p>
+                </div>
+            
+                <!-- Ensalada de Espinacas con Miel y Nuez -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Ensalada de Espinacas con Miel y Nuez</h3>
+                    <p class="text-gray-600">Una ensalada fresca con el toque dulce de la miel.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>2 tazas de espinacas frescas</li>
+                        <li>1/4 taza de nueces troceadas</li>
+                        <li>2 cucharadas de miel</li>
+                        <li>1 cucharada de vinagre balsámico</li>
+                        <li>1 cucharada de aceite de oliva</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">1. Mezclar las espinacas con las nueces. 2. En un tazón pequeño, combinar la miel, vinagre, aceite, sal y pimienta. 3. Verter la vinagreta sobre la ensalada y servir.</p>
+                </div>
+    
+                <!-- Provoleta a la Miel -->
+<div class="p-6 bg-gray-100 rounded-lg text-left">
+    <h3 class="text-xl font-semibold">Provoleta a la Miel</h3>
+    <p class="text-gray-600">Una variante deliciosa de la famosa provoleta argentina, con un toque dulce de miel que realza su sabor.</p>
+    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+    <ul class="list-disc ml-6 text-gray-600">
+        <li>1 rueda de provoleta</li>
+        <li>2 cucharadas de miel</li>
+        <li>Orégano al gusto</li>
+        <li>Un chorrito de aceite de oliva</li>
+        <li>Un poco de pimienta negra molida</li>
+    </ul>
+    <h4 class="mt-4 font-semibold">Preparación:</h4>
+    <p class="text-gray-600">1. Coloca la rueda de provoleta en una sartén o parrilla caliente. 2. Cocina por ambos lados hasta que se derrita y forme una capa dorada. 3. Rocía con miel y espolvorea con orégano y pimienta negra. 4. Sirve inmediatamente como entrada o acompañamiento para carnes a la parrilla. ¡Disfruta de la combinación perfecta entre lo salado y lo dulce!</p>
+</div>
+
+
+                <!-- Costillas a la Miel y Limón -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Costillas a la Miel y Limón</h3>
+                    <p class="text-gray-600">Una combinación de dulce y ácido para un plato delicioso.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>1 kg de costillas de cerdo</li>
+                        <li>3 cucharadas de miel</li>
+                        <li>1 limón exprimido</li>
+                        <li>2 dientes de ajo picados</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">1. Mezclar la miel, limón, ajo, sal y pimienta. 2. Marinar las costillas en esta mezcla durante al menos 2 horas. 3. Cocinar en el horno a 180°C por 45 minutos, bañando las costillas con la marinada cada 15 minutos.</p>
+                </div>
+    
+                <!-- Tostadas con Queso Crema y Miel -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Tostadas con Queso Crema y Miel</h3>
+                    <p class="text-gray-600">Un aperitivo delicioso y rápido para cualquier momento.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>4 rebanadas de pan de molde</li>
+                        <li>100g de queso crema</li>
+                        <li>2 cucharadas de miel</li>
+                        <li>Albahaca fresca al gusto</li>
+                        <li>Pimienta al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">1. Tostar las rebanadas de pan. 2. Untar el queso crema sobre las tostadas. 3. Añadir miel por encima y decorar con albahaca. 4. Servir y disfrutar.</p>
+                </div>
+    
+                <!-- Pizza con Miel y Prosciutto -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Pizza con Miel y Prosciutto</h3>
+                    <p class="text-gray-600">Una pizza salada con un toque dulce irresistible.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>1 base de pizza</li>
+                        <li>100g de prosciutto</li>
+                        <li>150g de mozzarella</li>
+                        <li>2 cucharadas de miel</li>
+                        <li>Rúcula fresca</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">1. Colocar la mozzarella y el prosciutto sobre la base de pizza. 2. Hornear a 220°C por 10 minutos. 3. Sacar del horno, rociar con miel y añadir la rúcula. Servir y disfrutar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aderezos-salsas-marinados" class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-[var(--text)] mb-8">Aderezos, Salsas y Marinados con Miel</h2>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Aderezo de Miel y Mostaza -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Aderezo de Miel y Mostaza</h3>
+                    <p class="text-gray-600">Un aderezo suave y picante que combina la miel con la mostaza.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>3 cucharadas de miel</li>
+                        <li>2 cucharadas de mostaza</li>
+                        <li>1 cucharada de vinagre balsámico</li>
+                        <li>1/4 taza de aceite de oliva</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">Mezcla todos los ingredientes en un tazón pequeño hasta que estén bien combinados. Sirve sobre ensaladas o como acompañante de carnes a la parrilla.</p>
+                </div>
+    
+                <!-- Salsa Barbacoa con Miel -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Salsa Barbacoa con Miel</h3>
+                    <p class="text-gray-600">Una salsa barbacoa casera con un toque dulce gracias a la miel.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>1/2 taza de miel</li>
+                        <li>1 taza de ketchup</li>
+                        <li>2 cucharadas de vinagre de manzana</li>
+                        <li>1 cucharadita de salsa Worcestershire</li>
+                        <li>1/2 cucharadita de ajo en polvo</li>
+                        <li>1 cucharadita de paprika</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">Mezcla todos los ingredientes en una sartén y cocina a fuego lento durante 20 minutos. Úsala para acompañar costillas, pollo o hamburguesas.</p>
+                </div>
+    
+                <!-- Marinado de Miel y Limón para Pollo -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Marinado de Miel y Limón para Pollo</h3>
+                    <p class="text-gray-600">Un marinado fresco y dulce para realzar el sabor del pollo.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>3 cucharadas de miel</li>
+                        <li>Jugo de 1 limón</li>
+                        <li>1 cucharada de aceite de oliva</li>
+                        <li>2 dientes de ajo picados</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">Mezcla todos los ingredientes en un bol. Deja marinar el pollo en la mezcla por 30 minutos antes de cocinarlo.</p>
+                </div>
+    
+                <!-- Salsa de Miel y Ajo para Costillas -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Salsa de Miel y Ajo para Costillas</h3>
+                    <p class="text-gray-600">Una salsa dulce y sabrosa que combina la miel con el ajo para las costillas perfectas.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>4 cucharadas de miel</li>
+                        <li>2 dientes de ajo picados</li>
+                        <li>1 cucharada de salsa de soja</li>
+                        <li>1 cucharada de vinagre de arroz</li>
+                        <li>1/2 cucharadita de pimienta negra</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">En una sartén, sofríe el ajo picado hasta que esté dorado. Agrega el resto de los ingredientes y cocina a fuego lento hasta que la salsa espese. Úsala para glasear las costillas durante la cocción.</p>
+                </div>
+    
+                <!-- Marinado de Miel y Jengibre para Cerdo -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <h3 class="text-xl font-semibold">Marinado de Miel y Jengibre para Cerdo</h3>
+                    <p class="text-gray-600">Un marinado aromático y delicioso para cerdo, con miel y jengibre fresco.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>3 cucharadas de miel</li>
+                        <li>1 cucharada de jengibre rallado</li>
+                        <li>2 cucharadas de salsa de soja</li>
+                        <li>2 cucharadas de aceite de sésamo</li>
+                        <li>1 cucharada de vinagre de manzana</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">Mezcla todos los ingredientes y marina el cerdo por lo menos 2 horas antes de cocinarlo a la parrilla o en una sartén.</p>
+                </div>
+    
+                <!-- Salsa de Miel y Chile para Tacos -->
+                <div class="p-6 bg-gray-100 rounded-lg text-left">
+                    <!-- <img src="salsa-miel-chile-tacos.jpg" alt="Salsa de Miel y Chile para Tacos" class="rounded-lg mb-4">  IAMGENES-->
+                    <h3 class="text-xl font-semibold">Salsa de Miel y Chile para Tacos</h3>
+                    <p class="text-gray-600">Una salsa picante y dulce para acompañar tus tacos favoritos.</p>
+                    <h4 class="mt-4 font-semibold">Ingredientes:</h4>
+                    <ul class="list-disc ml-6 text-gray-600">
+                        <li>2 cucharadas de miel</li>
+                        <li>1 cucharadita de chile en polvo</li>
+                        <li>1 cucharada de salsa de chile chipotle</li>
+                        <li>1 cucharada de jugo de lima</li>
+                        <li>Sal al gusto</li>
+                    </ul>
+                    <h4 class="mt-4 font-semibold">Preparación:</h4>
+                    <p class="text-gray-600">Mezcla todos los ingredientes hasta obtener una salsa suave. Sirve sobre tacos de carne, pollo o pescado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="bg-[var(--primary)] text-black py-8"> 
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+                          <!-- Sección del logo -->
+                          <div class="flex justify-center items-center">
+                            <img src="/logo.png" alt="Miel El Chañar" class="w-32 h-auto">
+                        </div>
+              
+              <!-- Sección de información de contacto -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2">
+                        <li>📍 Gálvez, Santa Fe, Argentina</li>
+                        <li>📞 +54 9 3404 518511</li> 
+                        <li>✉️ contacto@mielelchanar.com</li>
+                    </ul>
+                </div>
+      
+                <!-- Sección de enlaces rápidos -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Enlaces rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/#inicio" class="hover:underline text-gray-700 hover:text-primary transition">Inicio</a></li>
+                        <li><a href="/#productos" class="hover:underline text-gray-700 hover:text-primary transition">Productos</a></li>
+                        <li><a href="/#beneficios" class="hover:underline text-gray-700 hover:text-primary transition">Beneficios</a></li>
+                        <li><a href="/recetas.html" class="hover:underline text-gray-700 hover:text-primary transition">Recetas</a></li>
+                    </ul>
+                </div>
+      
+                <!-- Sección de redes sociales -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Seguinos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.instagram.com/miel.elchanar/" class="hover:underline text-gray-700 hover:text-primary transition" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com" class="hover:underline text-gray-700 hover:text-primary transition" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+      
+    
+            </div>
+            
+            <!-- Derechos de autor -->
+            <div class="border-t border-gray-700 mt-8 pt-4">
+                <p class="text-sm text-center text-gray-600">&copy; 2025 Miel El Chañar</p>
+            </div>
+        </div>
+      </footer>
+
+    <script>
+        
+        // Abrir y cerrar menú en móviles
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.remove("hidden");
+        });
+
+        document.getElementById("close-menu").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.add("hidden");
+        });
+
+        document.querySelectorAll("#mobile-menu a").forEach(link => {
+            link.addEventListener("click", function() {
+                document.getElementById("mobile-menu").classList.add("hidden");
+            });
+        });
+    </script>
+  
+</body>
+</html>
