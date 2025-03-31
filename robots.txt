@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xn--mielelchaar-9db.com.ar/sitemap.xml
